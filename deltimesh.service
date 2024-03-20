@@ -1,5 +1,5 @@
 [Unit]
-Description=Delete Useless Timeshift Snapshots ("deltimesh" by CatCatcher) 
+Description=Delete Useless Timeshift Snapshots ("deltimesh" by ImCatCatcher) 
 After=network.target
 
 [Service]
