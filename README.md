@@ -2,14 +2,17 @@
 deltimesh - утилита для ALT Linux Regular для удаления автоматических снапшотов Timeshift, помеченных как "Before Offline Update".
 
 ## Установка
-Для установки нам потребуется *git*.
+Для установки нам потребуется *git*. Установим его.
 ```bash
 su -c "apt-get install git"
 ```
 
+Далее подготавливаем папку и скачиваем скрипт.
 ```bash
-mkdir ~/.catcatcher && cd ~./catcatcher && git clone
+mkdir ~/.catcatcher && cd ~./catcatcher && git clone https://github.com/ImCatCatcher/deltimesh.git
 ```
-```bash
 
+Устанавливаем его.
+```bash
+su -c "ln -s $HOME/.catcatcher/deltimesh/deltimesh.py /usr/bin/deltimesh && chmod +x /usr/bin/deltimesh"
 ```
