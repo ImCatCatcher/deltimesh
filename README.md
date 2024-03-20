@@ -9,7 +9,7 @@ su -c "apt-get install git"
 
 Далее подготавливаем папку и скачиваем скрипт.
 ```bash
-mkdir ~/.catcatcher && cd ~./catcatcher && git clone https://github.com/ImCatCatcher/deltimesh.git
+mkdir ~/.catcatcher && cd ~/.catcatcher && git clone https://github.com/ImCatCatcher/deltimesh.git
 ```
 
 Устанавливаем его.
