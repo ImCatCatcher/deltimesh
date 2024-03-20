@@ -16,3 +16,25 @@ mkdir ~/.catcatcher && cd ~./catcatcher && git clone https://github.com/ImCatCat
 ```bash
 su -c "ln -s $HOME/.catcatcher/deltimesh/deltimesh.py /usr/bin/deltimesh && chmod +x /usr/bin/deltimesh"
 ```
+
+## Использование
+
+### Вручную
+Скрипт можно использовать вручную, для этого нам потребуются права root.
+```bash
+su -c "deltimesh"
+```
+
+### Автоматически
+Также возможно использование скрипта на автозагрузке как сервиса для systemd.
+
+Установим его.
+```bash
+su -c "ln -s $HOME/.catcatcher/deltimesh/deltimesh.service /etc/systemd/system/deltimesh.service"
+```
+
+Теперь включим.
+
+```bash
+su -c "systemctl enable deltimesh"
+```
