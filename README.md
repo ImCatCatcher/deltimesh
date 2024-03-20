@@ -30,7 +30,7 @@ su -c "deltimesh"
 
 Установим его.
 ```bash
-su -c "ln -s $HOME/.catcatcher/deltimesh/deltimesh.service /etc/systemd/system/deltimesh.service"
+su -c "cp $HOME/.catcatcher/deltimesh/deltimesh.service /etc/systemd/system/deltimesh.service"
 ```
 
 Теперь включим.
