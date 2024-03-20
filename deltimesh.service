@@ -1,0 +1,10 @@
+[Unit]
+Description=Delete Useless Timeshift Snapshots ("deltimesh" by CatCatcher) 
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/bin/deltimesh
+
+[Install]
+WantedBy=multi-user.target
